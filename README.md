@@ -52,6 +52,8 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 
 `npm run build`を実行する。
 
+入稿ファイルはB5グレースケールで出力されます。
+
 ## Local commands
 
 - `npm run lint`: 校正結果を表示する。
