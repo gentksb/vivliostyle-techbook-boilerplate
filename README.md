@@ -2,7 +2,7 @@
 
 ローカル環境への設定を必要とせず、技術同人誌を書き始めるための設定テンプレートです。
 
-CSS組版の[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)を利用していますので、設定や装飾は全てvivliostyleの仕様に従います。
+CSS組版の[vivliostyle.js](https://github.com/vivliostyle/vivliostyle.js)を利用しており、設定や装飾は全てvivliostyleの仕様に従います。
 
 Template Repositoryとして提供していますので、このリポジトリをベースに著者自身の新規GitHubリポジトリを作成してください。
 
