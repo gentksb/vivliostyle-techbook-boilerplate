@@ -20,9 +20,10 @@ Codespacesを編集環境として想定しています。ローカルのVScode�
 2. 右上のCode（緑のボタン）からCodespacesを起動する
 3. VScode（エディタ）がWEB上で起動するのを待つ
 4. 推奨の拡張機能をインストールする（右下でOKボタン）
-5. gitブランチを作成する（名前は何でもよい）
-6. ブランチ作成後、プルリクエストを作成する
-7. 自分の担当章になるMarkdownファイルを編集する
+5. ターミナルで`npm ci`を実行する
+6. gitブランチを作成する（名前は何でもよい）
+7. ブランチ作成後、プルリクエストを作成する
+8. 自分の担当章になるMarkdownファイルを編集する
 
 著者が1名の場合でも、プレビューPDF作成機能を活用するため執筆用ブランチを作成することを推奨します。
 
@@ -55,7 +56,7 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 
 - `npm run lint`: 校正結果を表示する。
 - `npm run preview-build`: プレビュー用PDFを`output/preview.pdf`として生成する。
-- `npm run build`: 入稿用のPDF（PDF/X-1a形式）を`output/{vivliostyle.config.jsで指定したoutput名}`として生成する。
+- `npm run build`: 入稿用のPDF（PDF/X-1a形式）を`output/{vivliostyle.config.jsで指定したoutput名}`として生成する。初回はDockerイメージ作成のため時間がかかります。
 
 ## その他、本のデザイン変更や表紙データの作成など
 

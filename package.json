@@ -8,7 +8,7 @@
   "homepage": "https://github.com/gentksb/vivliostyle-techbook-boilerplate#readme",
   "scripts": {
     "lint": "textlint README.md 'chapter/**/*.md'",
-    "build": "run-p build:scss build:vivliostyle",
+    "build": "run-p build:vivliostyle",
     "build:vivliostyle": "vivliostyle build --render-mode docker --preflight press-ready --preflight-option gray-scale",
     "dev": "run-p preview watch:scss",
     "preview": "vivliostyle preview",
