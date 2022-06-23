@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "taichi.vscode-textlint",
+    "usernamehw.errorlens"
+  ]
+}

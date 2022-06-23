@@ -1,0 +1,37 @@
+name: Upload Preview build
+
+on:
+  - pull_request
+
+jobs:
+  upload-preview-build:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{github.event.pull_request.head.sha}}
+
+      - name: install pupperteer dependencies
+        run: |
+          sudo apt-get update
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get -y install --no-install-recommends libgtk-3.0 libgbm-dev libnss3 libatk-bridge2.0-0 libasound2 fonts-noto-cjk
+
+      - name: install node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: install vivliostyle
+        run: npm i -g @vivliostyle/cli
+
+      - name: install dependencies and build
+        run: npm ci && npm run preview-build
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: preview-build PDF file
+          path: output/preview.pdf
+          retention-days: 1
