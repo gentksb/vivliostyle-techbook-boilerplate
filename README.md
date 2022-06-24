@@ -19,7 +19,7 @@ Codespacesを編集環境として想定しています。ローカルのVScode�
 ## 原稿編集の始め方
 
 1. [Codespaces の Preview に申し込む](https://github.com/features/codespaces)
-2. 右上のCode（緑のボタン）からCodespacesを起動する
+2. 右上のCodeボタンからCodespacesを起動する
 3. VScode（エディタ）がWEB上で起動するのを待つ
 4. 推奨の拡張機能をインストールする（右下でOKボタン）
 5. ターミナルで`npm ci`を実行する
