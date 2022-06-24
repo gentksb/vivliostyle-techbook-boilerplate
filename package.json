@@ -9,10 +9,10 @@
   "scripts": {
     "lint": "textlint README.md 'chapter/**/*.md'",
     "build": "run-p build:vivliostyle",
-    "build:vivliostyle": "vivliostyle build --render-mode docker --preflight press-ready --preflight-option gray-scale",
+    "build:vivliostyle": "vivliostyle build --style ./userstyle/font.css --render-mode docker --preflight press-ready --preflight-option gray-scale",
     "dev": "run-p preview watch:scss",
     "preview": "vivliostyle preview",
-    "preview-build": "vivliostyle build -o ./output/preview.pdf",
+    "preview-build": "vivliostyle build --style ./userstyle/font.css -o ./output/preview.pdf",
     "validate": "vivliostyle-theme-scripts validate",
     "watch:scss": "sass --watch theme:."
   },
