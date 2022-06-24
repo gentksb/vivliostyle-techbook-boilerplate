@@ -56,6 +56,8 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 
 入稿ファイルはB5グレースケールで出力されます。
 
+表紙ファイルは別途作成・入稿が必要です。
+
 ## Local commands
 
 - `npm run lint`: 校正結果を表示する。
@@ -71,4 +73,5 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 ## Known Issue
 
 - `vivliostyle preview`コマンドはcodespaces上で使えません（GUIが利用できないため）
-  - WSL2 GUI環境やMac環境で子のリポジトリをクローンした場合はpreviewを利用できます
+  - WSL2 GUI環境やMac環境でこのリポジトリをクローンした場合はpreviewを利用できます
+  - ローカル環境のdevcontainerでpreviewを利用したい場合、`Dockerfile`の修正が必要です
