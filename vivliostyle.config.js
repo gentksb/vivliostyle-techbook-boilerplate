@@ -1,5 +1,5 @@
 module.exports = {
-  title: "アクションカムとスマートウォッチの本（仮）",
+  title: "本のタイトルをvivliostyle.configで設定してください",
   author: "Write your name",
   language: "ja",
   size: "JIS-B5",
