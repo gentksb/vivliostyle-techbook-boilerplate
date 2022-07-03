@@ -75,5 +75,3 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 - `vivliostyle preview`コマンドはcodespaces上で使えません（GUIが利用できないため）
   - WSL2 GUI環境やMac環境でこのリポジトリをクローンした場合はpreviewを利用できます
   - ローカル環境のdevcontainerでpreviewを利用したい場合、`Dockerfile`の修正が必要です
-- 初回起動はtextlint extensionが動かない
-  - `npm ci` しないとcommand not found になるので、codespacesを再起動してください
