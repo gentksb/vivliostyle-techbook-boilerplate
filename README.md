@@ -14,17 +14,17 @@ Template Repositoryとして提供していますので、このリポジトリ�
 - リアルタイム校正を提供するためのVScode拡張機能セット
 - vivliostyleのビルド設定
 
-Codespacesを編集環境として想定しています。ローカルのVScodeでRemote Container拡張機能を使った執筆も可能です。
+Codespacesを編集環境として利用できます。ローカルのVScodeでRemote Container拡張機能を使った執筆も可能です。
+VivlioStyleのプレビュー機能を利用したい場合は、ローカル環境でお使いください）
 
 ## 原稿編集の始め方
 
-1. [Codespaces の Preview に申し込む](https://github.com/features/codespaces)
-2. 右上のCodeボタンからCodespacesを起動する
-3. VScode（エディタ）がWEB上で起動するのを待つ
-4. 推奨の拡張機能をインストールする（右下でOKボタン）
-5. gitブランチを作成する（名前は何でもよい）
-6. ブランチ作成後、プルリクエストを作成する
-7. 自分の担当章になるMarkdownファイルを編集する
+1. 右上のCodeボタンからCodespacesを起動する
+1. VScode（エディタ）がWEB上で起動するのを待つ
+1. 推奨の拡張機能をインストールする（右下でOKボタン）
+1. gitブランチを作成する（名前は何でもよい）
+1. ブランチ作成後、プルリクエストを作成する
+1. 自分の担当章になるMarkdownファイルを編集する
 
 著者が1名の場合でも、プレビューPDF作成機能を活用するため執筆用ブランチを作成することを推奨します。
 
@@ -49,6 +49,8 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 
 なお、この際に生成されるPDFはフォントを埋め込まずサイズを落としているため、入稿には使えません。
 
+GitHub StorageのFree limitをかなり圧迫する可能性があるため、**デフォルトではアップロード機能をコメントアウトしています**。必要に応じて有効化してください
+
 ## 入稿ファイルの作成方法
 
 `npm run build`を実行する。
@@ -72,5 +74,5 @@ Linterには[Textlint](https://github.com/textlint/textlint)を利用してい�
 ## Known Issue
 
 - `vivliostyle preview`コマンドはcodespaces上で使えません（GUIが利用できないため）
-  - WSL2 GUI環境やMac環境でこのリポジトリをクローンした場合はpreviewを利用できます
+  - WSL2 GUI環境やMac環境でこのリポジトリをクローンした場合は`vivliostyle preview`を利用できます
   - ローカル環境のdevcontainerでpreviewを利用したい場合、`Dockerfile`の修正が必要です
