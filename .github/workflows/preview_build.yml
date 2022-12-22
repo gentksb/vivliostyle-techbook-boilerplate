@@ -29,9 +29,11 @@ jobs:
       - name: install dependencies and build
         run: npm ci && npm run preview-build
 
-      - name: Upload preview artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: preview-build PDF file
-          path: output/preview.pdf
-          retention-days: 1
+#       - name: Upload preview artifact
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: preview-build PDF file
+#           path: output/preview.pdf
+#           retention-days: 1
+# uncomment to upload preview file
+# [CAUTION!] PDF will become large file, easy to reach GitHub Storage free limit.
